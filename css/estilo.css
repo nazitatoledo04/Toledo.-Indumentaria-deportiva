@@ -51,6 +51,108 @@ ul {
 .Barva {
   justify-content: center;
 }
+/*phones*/
+@media (max-width: 600px) { 
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+nav {
+    display: block;
+}
+
+@media screen and (max-width: 576px)
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  margin-top: 40px;
+}
+nav ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.vertical {
+  flex-direction: column;
+}
+ }
+
+
+/*desktops*/
+@media (min-width: 800px) { 
+  ul {
+    background-color: rgb(8, 3, 78);
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav > ul {
+    display: flex;
+  }
+  
+  nav > ul > li {
+    flex-grow: 1;
+    position: relative;
+
+  }
+  
+  nav ul a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+  }
+  
+  ul ul {
+    position: absolute;
+    background-color: rgb(231, 155, 14);
+    width: 100%;
+    display: none;
+  }
+  ul ul li {
+    background-color: rgb(70, 70, 70);
+  }
+  nav li:hover {
+    background-color: rgb(240, 123, 13);
+  }
+  ul li:hover ul {
+    display: block;
+  }
+
+  section {
+    display: flex;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  .space-around {
+    justify-content: space-around;
+  }
+.Barva {
+  justify-content: center;
+}
+ }
 /*div {
     display: block;
     padding: 20px;
