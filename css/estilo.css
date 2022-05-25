@@ -40,7 +40,18 @@ ul {
     display: block;
   }
 
-div a {
+  section {
+    display: flex;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  .space-around {
+    justify-content: space-around;
+  }
+.Barva {
+  justify-content: center;
+}
+/*div {
     display: block;
     padding: 20px;
     text-align: 0;
@@ -49,4 +60,5 @@ div a {
     list-style: none;
     padding: 0;
     display: flex;
-}
+}*/
+
