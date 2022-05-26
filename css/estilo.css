@@ -30,7 +30,10 @@ ul ul {
   width: 100%;
   display: none;
 }
-
+.center{
+  display: flex;
+  display: block;
+}
 ul ul li {
   background-color: rgb(70, 70, 70);
 }
@@ -56,7 +59,23 @@ section {
 .Barva {
   justify-content: center;
 }
-
+footer {
+  display: block;
+  list-style: none;
+}
+footer ul {
+  text-align: center;
+  color: white;
+  list-style: none;
+  display: block;
+  display: flex;
+}
+footer ul li a {
+  flex-grow: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
 /*phones*/
 @media (max-width: 600px) {
   nav {

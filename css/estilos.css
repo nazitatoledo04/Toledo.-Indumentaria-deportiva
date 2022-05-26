@@ -1,0 +1,172 @@
+ul {
+  background-color: #08034e;
+  list-style: none;
+  padding: 0;
+}
+
+ul ul ul {
+  position: absolute;
+  background-color: #e79b0e;
+  width: 100%;
+  display: none;
+}
+
+ul ul ul li {
+  background-color: #464646;
+}
+
+ul ul li:hover ul {
+  display: block;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul nav > ul > li {
+  flex-grow: 1;
+  position: relative;
+}
+
+nav > ul nav ul a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: white;
+}
+
+nav > ul nav li:hover {
+  background-color: #f07b0d;
+}
+
+.center {
+  display: flex;
+  display: block;
+}
+
+section {
+  display: flex;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.Barva {
+  justify-content: center;
+}
+
+footer {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+
+footer ul {
+  color: white;
+  list-style: none;
+  display: block;
+  display: flex;
+}
+
+/*phones*/
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 650px) {
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .vertical {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /*desktops*/
+}
+
+@media (max-width: 600px) and (min-width: 800px) {
+  ul {
+    background-color: #08034e;
+    list-style: none;
+    padding: 0;
+  }
+  nav > ul {
+    display: flex;
+  }
+  nav > ul > li {
+    flex-grow: 1;
+    position: relative;
+  }
+  nav ul a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: white;
+  }
+  ul ul {
+    position: absolute;
+    background-color: #e79b0e;
+    width: 100%;
+    display: none;
+  }
+  ul ul li {
+    background-color: #464646;
+  }
+  nav li:hover {
+    background-color: #f07b0d;
+  }
+  ul li:hover ul {
+    display: block;
+  }
+  section {
+    display: flex;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  .space-around {
+    justify-content: space-around;
+  }
+  .Barva {
+    justify-content: center;
+  }
+}
