@@ -1,3 +1,8 @@
+:root{
+  --titulos: blue;
+  --subtitulos: red;
+  --borde: 2px solid red;
+}
 ul {
     background-color: rgb(8, 3, 78);
     list-style: none;
@@ -176,3 +181,13 @@ ul {
       }
     }
   }
+  //main.css
+  /* base */
+  @import "base/reset";
+  @import "base/typography";
+
+  /* componentes */
+  @import "components/buttons";
+  @import "components/div";
+  @import "components/drupdown";
+
